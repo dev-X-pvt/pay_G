@@ -1,0 +1,138 @@
+* {background-color:rgb(255, 255, 255);}
+
+
+body {
+	font-family: "Balsamiq Sans", cursive;
+}
+
+.generate-qr {
+    padding: 1.3em 2em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .generate-qr:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .generate-qr:active {
+    transform: translateY(-1px);
+  }
+
+generate-qr {
+    width: 100px;
+    padding: 1px 20px ;
+    border-radius: 0 15px 15px 0;
+    outline: none;
+    border: 2;
+    background: #d2481e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.qr-area {
+    width: 500px;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    transition: height 0.5s;
+}
+.qr-area img {
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+.error {
+    color: red;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    animation: anime 0.05s linear 10;
+
+    display: none;
+}
+
+@keyframes anime {
+    0%{transform: translateX(0px);}
+   25%{transform: translateX(-2px);}
+    50%{transform: translateX(0px);}
+    75%{transform: translateX(2px);}
+    100%{transform: translateX(0px);}
+} 
+
+input {
+    font-family: monospace;
+    max-width: 200px;
+    outline: none;
+    border: 1px solid #dadada;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f3f7fe;
+    transition: .3s;
+    color: #000000;
+  }
+  
+  input:focus {
+    border: 1px solid #000000;
+    box-shadow: 0 0 0 4px #0000005f
+  }
+
+  .btn {
+    padding: 1.3em 2em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+  .container {
+
+    background-color: #ffffff;
+    height: 100%;
+    width: 500px;
+    position: relative;
+    border: 5px solid green;
+    border-radius: 10px;
+  border-style:double;}
+
+.pay-btn  {
+  justify-content: center;
+  align-items: center;
+  
+}

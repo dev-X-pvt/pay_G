@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pay-G | UPI LINK GENERATOR</title>
+	<link rel="icon" type="image/x-icon" href="img/Screenshot 2024-01-18 195101-fotor-bg-remover-20240118195750.png">
+</head>
+<body>
+   <center>
+		<div class="container">
+				<a href=""><img src="img/Screenshot_2024-01-16_233904-removebg-preview.png" height="100"></a>
+				<br>
+				<h4 style="color: #FF7417;">Create UPI Payment Request Link</h4>
+				<h4 style="color: #0B6623;">USE THEM ANYWHERE</h4>
+				<div id="container">
+				<img src="img/upi-removebg-preview.png" height="100">
+		</div>
+				<br>
+				<div id="linkpediv" style="display:none;">
+					<textarea class='text-box' rows="4" cols="30" id='linkpeURL'></textarea>
+					<br><br>
+					<a onclick='copyUpiUrl()' class='btn' id='btn-copy'>Copy Link</a>
+					<a id='whatsapp' class="btn">Share Link</a>
+				</div>
+		
+					<label class="label" style="color: #DAE1E2;">Enter Name:</label><br><br>
+					<input class="name"  name="pn" class="text-box" placeholder="Enter your name (Optional):"><br><br>
+					<label class="label" style="color: #DAE1E2;">Enter Upi Id:</label><br><br>
+					<input class="id" id="id" name="pa" class="text-box" placeholder="Enter UPI Id" required><br><br>
+					<label class="label" style="color: #DAE1E2;">Enter Amount (Optional):</label><br><br>
+					<input class="inr" type="number" name="am" class="text-box" placeholder="INR"><br><br>
+					<button id="id" class="generate-qr">Submit</button><br>
+                <br><div>
+                    <div id="temp" class="qr-area">
+                        <img src="" class="qr-img">
+									
+					</div>
+
+                <h2>Click on Pay or Scan QR & Pay using Any UPI App</h2>
+				<div class="pay-btn">
+					<button id="Pay" class="btn" onclick="window.location.href = url;"> Pay</button>
+				</div>
+			</center>
+				
+		</div>
+	
+    <script src="main.js"></script>
+</body>
+</html>
